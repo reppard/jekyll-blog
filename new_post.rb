@@ -7,7 +7,10 @@ class ParseOptions
   def self.parse(args)
     options = OpenStruct.new
     options.title = "Untitled"
-
+    time = Time.new
+    options.time = time.strftime("%Y-%m-%d %H:%M:%S")
+    options.stamp = time.strftime("%H%M%S")
+    options.date = time.strftime("%Y-%m-%d")
     opts = OptionParser.new do |opts|
       opts.banner = "Usage: new_post.rb [options]"
       opts.separator ""
@@ -40,4 +43,6 @@ if options.content == nil
   exit
 end
 
-p options.title
+filename = "#{options.date}-#{options.title.sub(" ",'-')}-#{options.stamp}.markdown"
+p options
+p filename
