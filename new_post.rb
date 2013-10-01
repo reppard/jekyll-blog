@@ -36,6 +36,25 @@ class ParseOptions
   end
 end
 
+class Post
+  def self.build(options)
+    header = build_header(options)
+    if File.exist?(options.content)
+      content = File.read(options.content)
+    else
+      puts "File not found: #{options.content}"
+      exit
+    end
+    header+content
+  end
+
+  def self.build_header(options)
+    "---\nlayout:  post\ntitle:  #{options.title}\ndate:  #{options.time}\ncategories:\n---\n\n"
+  end
+
+end
+
+
 options = ParseOptions.parse(ARGV)
 
 if options.content == nil
@@ -43,6 +62,11 @@ if options.content == nil
   exit
 end
 
-filename = "#{options.date}-#{options.title.sub(" ",'-')}-#{options.stamp}.markdown"
-p options
-p filename
+filename = "#{options.date}-#{options.title.gsub(' ','-')}-#{options.stamp}.markdown"
+post = Post.build(options)
+file = File.new("_posts/#{filename}","w")
+file.write(post)
+file.close
+system("./deploy")
+puts "All done!"
+
