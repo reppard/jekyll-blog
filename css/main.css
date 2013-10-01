@@ -13,10 +13,11 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #000;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  margin:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,8 +60,14 @@ ul.posts span {
   font-size: 115%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
+  margin: 0em auto 2em;
+  height: 100%;
   line-height: 1.5em;
+  background-color: #FFF;
+}
+
+.site .header {
+  text-align:center;
 }
 
 .site .header a {
@@ -69,12 +76,14 @@ ul.posts span {
 }
 
 .site .header h1.title {
+  color:#000;
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
-.site .header h1.title a {
-  color: #a00;
+.site .header h1.title a:visited {
+  color: #000;
+  text-decoration:none;
 }
 
 .site .header h1.title a:hover {
