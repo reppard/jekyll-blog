@@ -1,2 +1,5 @@
 _site
 .ruby-version
+.DS_Store
+_layouts/.DS_Store
+css/.DS_Store
