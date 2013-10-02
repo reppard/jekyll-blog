@@ -8,7 +8,8 @@ title: Something Isn't Write
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {{ post.excerpt }}...
+      {{ post.excerpt }}
+      <a class="continue" href="{{ post.url }}">... continue reading</a>
     {% endfor %}
   </ul>
 </div>

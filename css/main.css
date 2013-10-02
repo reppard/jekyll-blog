@@ -27,9 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a { 
+  color: #00a;
+  text-decoration:none;
+ }
+
+ a:hover   { color: #000; }
+/*a:visited { color: #a0a; }
 
 /*****************************************************************************/
 /*
@@ -53,7 +57,6 @@ ul.posts span {
 
 .avatar {
   border: dotted 1px;
-  margin: 1em;
   width:120px;
 }
 
@@ -142,12 +145,11 @@ ul.posts span {
 
 .site .footer .contact {
   float: left;
-  margin-right: 3em;
 }
 
 .site .footer .links {
   float: right;
-  margin-right: 3em;
+  text-align:right;
 }
 
 .site .footer .contact a {
@@ -171,6 +173,11 @@ ul.posts span {
 /*****************************************************************************/
 
 /* standard */
+
+ul.post a.continue {
+  text-decoration:none;
+}
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
