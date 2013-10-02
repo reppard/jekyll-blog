@@ -176,8 +176,10 @@ ul.posts span {
 
 /* standard */
 
-ul.post a.continue {
+a.continue {
   text-decoration:none;
+  text-align:right;
+  display:block;
 }
 
 .post pre {
