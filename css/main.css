@@ -57,6 +57,57 @@ ul.posts span {
 /*
 /*****************************************************************************/
 
+.header {
+  background-color:#000;
+  filter:alpha(opacity=60);
+  opacity:.6;
+  height:4em;
+  width:100%;
+  padding:1em;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header h1.title {
+  color:#FFF;
+  margin-bottom: 0em;
+  margin-right:auto;
+  margin-left:auto;
+  width:11em;
+  font-size:145%;
+  text-decoration: none;
+}
+
+.header h3.subtitle {
+  font-size: 75%;
+  color:gray;
+  margin-bottom: 1em;
+}
+
+.header h1.title a:visited {
+  color: #FFF;
+  text-decoration:none;
+}
+
+.header h1.title a:hover {
+  color: #FF9966;
+}
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
 .site {
   font-size: 115%;
   text-align: justify;
@@ -66,46 +117,10 @@ ul.posts span {
   height: 100%;
   line-height: 1.5em;
   background-color: #FFF;
+  box-shadow: 2px 2px 3px #aaa;
+  border-left:1px solid #aaa;
 }
 
-.site .header {
-  text-align:center;
-}
-
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site .header h1.title {
-  color:#000;
-  display: inline-block;
-  margin-bottom: 0em;
-}
-
-.site .header h3.subtitle {
-  font-size: 75%;
-  color:gray;
-  margin-bottom: 1em;
-}
-
-.site .header h1.title a:visited {
-  color: #000;
-  text-decoration:none;
-}
-
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
 
 .site .meta {
   color: #aaa;
