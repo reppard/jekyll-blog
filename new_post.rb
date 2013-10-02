@@ -1,7 +1,9 @@
 #!/bin/env ruby
 require 'optparse'
 require 'ostruct'
+require 'yaml'
 
+EDITOR = 'gedit'
 
 class ParseOptions
   def self.parse(args)
@@ -37,36 +39,41 @@ class ParseOptions
 end
 
 class Post
-  def self.build(options)
+  def self.build(options,filename)
     header = build_header(options)
-    if File.exist?(options.content)
-      content = File.read(options.content)
-    else
-      puts "File not found: #{options.content}"
-      exit
-    end
-    header+content
+     if options.content && File.exist?(options.content)
+       content = File.read(options.content)
+       file = File.new("_posts/#{filename}", "w")
+       file.write(header+content)
+       file.close
+     else
+       build_content(header,filename)
+     end
   end
 
   def self.build_header(options)
     "---\nlayout:  post\ntitle:  #{options.title}\ndate:  #{options.time}\ncategories:\n---\n\n"
   end
 
-end
+  def self.build_content(header,filename)
+    tmpfile = "/tmp/tmp-#{filename}"
+    system("echo '#{header}' > #{tmpfile}")
+    system("#{EDITOR} #{tmpfile}")
+    if filename =~ /Untitled/
+      getYaml = YAML.load_file("#{tmpfile}")
+      new_filename = filename.gsub("Untitled","#{getYaml["title"].gsub(' ','-')}")
+      system("cp #{tmpfile} _posts/#{new_filename} && rm #{tmpfile}")
+    else
+      system("cp #{tmpfile} _posts/#{filename} && rm #{tmpfile}")
+    end
+  end
 
+end
 
 options = ParseOptions.parse(ARGV)
-
-if options.content == nil
-  p "File name required."
-  exit
-end
-
 filename = "#{options.date}-#{options.title.gsub(' ','-')}-#{options.stamp}.markdown"
-post = Post.build(options)
-file = File.new("_posts/#{filename}","w")
-file.write(post)
-file.close
+post = Post.build(options,filename)
+
 system("./deploy")
 puts "All done!"
 
