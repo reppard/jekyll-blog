@@ -14,7 +14,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #000;
-  background: url("images/back.jpg")no-repeat;
+  background: url("images/back.jpg") no-repeat right top;
+  background-attachment:fixed;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -74,7 +75,7 @@ ul.posts span {
   opacity:.6;
   height:4em;
   width:100%;
-  padding:1em;
+  padding-bottom:1em;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
