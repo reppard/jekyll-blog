@@ -1,53 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">
+{% include header.html %}
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+{{ content }}
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Seaweed+Script' rel='stylesheet' type='text/css'>
+<div class="footer">
+  <div class="contact">
+    <p>
+    Reppard Walker<br />
+    Senior Operations Engineer<br />
+    Amature Code-Monkey<br />
+    reppardwalker@gmail.com
+    </p>
+  </div>
+  <div class="links">
+    <p>
+      <a href="https://github.com/reppard">github.com/reppard</a><br />
+      <a href="https://twitter.com/iamreppard">twitter.com/iamreppard</a><br />
+    </p>
+    <img class="avatar" src="/images/avatar.jpg"/>
+  </div>
+</div>
+<div class="logos">
+  <p>
+    <a href="http://httpd.apache.org/"><img src="/icons/apache_pb2.gif" alt="[ Powered by Apache ]"/></a>
+    <a href="http://fedoraproject.org/"><img src="/icons/poweredby.png" alt="[ Powered by Fedora ]" width="88" height="31" /></a>
+  </p>
+</div>
 
-  </head>
-  <body>
-
-    <div class="header">
-      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-      <h3 class="subtitle">powered by jekyll</h3>
-    </div> <!-- header -->
-    <div class="site">
-
-      {{ content }}
-
-      <div class="footer">
-        <div class="contact">
-          <p>
-            Reppard Walker<br />
-            Senior Operations Engineer<br />
-            Amature Code-Monkey<br />
-            reppardwalker@gmail.com
-          </p>
-        </div>
-        <div class="links">
-          <p>
-            <a href="https://github.com/reppard">github.com/reppard</a><br />
-            <a href="https://twitter.com/iamreppard">twitter.com/iamreppard</a><br />
-          </p>
-          <img class="avatar" src="/images/avatar.jpg"/>
-        </div>
-      </div><!-- contact -->
-    </div><!-- footer -->
-      <div class="logos">
-        <p>
-          <a href="http://httpd.apache.org/"><img src="/icons/apache_pb2.gif" alt="[ Powered by Apache ]"/></a>
-          <a href="http://fedoraproject.org/"><img src="/icons/poweredby.png" alt="[ Powered by Fedora ]" width="88" height="31" /></a>
-        </p>
-      </div><!-- logos -->
-  </div> <!-- site -->
-</body>
-</html>
+{% include footer.html %}
