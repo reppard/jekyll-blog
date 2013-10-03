@@ -3,7 +3,7 @@ require 'optparse'
 require 'ostruct'
 require 'yaml'
 
-EDITOR = 'gedit'
+EDITOR = "vim --cmd ':set spell spelllang=en_us'"
 
 class ParseOptions
   def self.parse(args)
