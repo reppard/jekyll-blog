@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll build --destination ~/html
+jekyll build --destination /Library/WebServer/Documents
