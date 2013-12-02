@@ -1,0 +1,16 @@
+---
+layout:  post
+title:  Cleaning House
+date:  2013-10-22 21:33:51
+categories:
+---
+
+So about this blogging thing.  I have built and rebuilt my personal blog more times than I care to admit.  And every time I do this, I delete all of my previous posts.  I do this for one reason.  It's because they were completely disposable.  You see it has never been about the actual content for me.  It has always been about the process of creating something.  Whether it's just configuring some Wordpress page or taking a stab at building my own framework with Sinatra, it is the process of creating that blog space that I really enjoy.  This is all fine and well but then I am left with this empty space that needs content to serve it's purpose.  So I will usually end up posting some code I am working on or posting the stats from my last Nethack game.
+
+As of late I have gotten into reading blogs(usually tech/developer blogs).  I have come to appreciate and enjoy this vibrant ecosystem of knowledge and philosophy and I would very much like to contribute to it rather than pollute it with nonsense(not that anyone reads my dribble anyway!).  I recently posted a thread about testing on [Ruby Rogues Parley](http://parley.rubyrogues.com/).  One of the commentators gave me some constructive criticism and a [link](http://theotherzach.com/writes/2013/5/27/shaming) to post he had authored on a related subject.  I did not take offense to his comment and even indulged him a bit by reading his post.  While there I read a few of the other posts he had authored.  The one that really impressed me was the one titled ["Developers Are Cattle"](http://theotherzach.com/writes/2013/7/6/developers-are-cattle).  The title was clever enough to engage me and make me want to read more.  The content was humorous and thoughtful.  It was enough to inspire me to change my current blogging habits.  Much like the code I spend so much time trying to improve, from now on, I'd like to blog more intentionally.  I want to contribute value to the developer community at large.
+
+And we come full circle.  I am now going to remove the mindlessness from my newly built jekyll blog and start blog life anew!
+
+...ok so just one code snippet.  If you'd like to take notes or construct blogs in a terminal environment with some basic spell check highlighting, add something like this to your .bashrc(.zshrc, .bash_profile, .whatever):
+
+`alias vedit="vim --cmd ':set spell spelllang=en_us'"`
