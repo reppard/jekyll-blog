@@ -13,11 +13,12 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #000;
-  background: url("images/back.jpg") no-repeat right top;
+  background-color: #FFF;
+  //background: url("images/back.jpg") no-repeat right top;
   background-attachment:fixed;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: 13.34px "Lucida Console", Monaco, monospace;
+  //font: 13.34px Helvetica, Arial, sans-serif;
+  //font-size: small;
   text-align: center;
   margin:0px;
 }
@@ -51,18 +52,30 @@ ul.posts li {
   margin-top: 1.75em;
   padding: 0 0 0 1em;
   background: whitesmoke;
-  border-radius:3px;
+  border:2px dotted grey;
 }
 
 ul.posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
+  font-family: "Lucida Console", Monaco, monospace;
+  //font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
 
 .avatar {
-  border: dotted 1px;
+  border:2px dotted grey;
   width:120px;
+}
+
+.header ul {
+  text-align:center;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.header ul li {
+  float:left;
 }
 
 /*****************************************************************************/
@@ -72,15 +85,16 @@ ul.posts span {
 /*****************************************************************************/
 
 .header {
-  background-color:#000;
+  display:inline-block;
+  //background-color:#000;
   filter:alpha(opacity=60);
   opacity:.6;
   height:4em;
   width:100%;
-  padding-bottom:1em;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
+  padding:1em;
+  //margin-left:auto;
+  //margin-right:auto;
+  text-align:left;
 }
 
 .header a {
@@ -89,13 +103,14 @@ ul.posts span {
 }
 
 .header h1.title {
-  color:#FFF;
+  color:black;
   margin-bottom: 0em;
-  margin-right:auto;
-  margin-left:auto;
-  width:11em;
-  font-size:250%;
-  font-family: 'Seaweed Script', cursive;
+  //margin-right:auto;
+  //margin-left:auto;
+  //width:11em;
+  font-size:2em;
+  font-family: "Lucida Console", Monaco, monospace;
+  //font-family: 'Seaweed Script', cursive;
   text-decoration: none;
 }
 
@@ -106,7 +121,7 @@ ul.posts span {
 }
 
 .header h1.title a:visited {
-  color: #FFF;
+  color:black;
   text-decoration:none;
 }
 
@@ -131,8 +146,9 @@ ul.posts span {
   padding: 1em;
   line-height: 1.5em;
   background-color: #FFF;
-  box-shadow: 2px 2px 3px #aaa;
-  border-left:1px solid #aaa;
+  border:3px dotted grey;
+  //box-shadow: 2px 2px 3px #aaa;
+  //border-left:1px solid #aaa;
 }
 
 
@@ -143,7 +159,7 @@ ul.posts span {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 2px dotted #eee;
+  border-top: 2px dotted grey;
   margin-top: 2em;
   overflow: hidden;
 }
@@ -217,5 +233,6 @@ a.continue {
 }
 
 .logos {
+  opacity: 0.2;
   text-align:center;
 }
