@@ -1,0 +1,9 @@
+---
+layout:  post
+title:  Is This Thing On?
+date:  2014-07-16 22:44:03
+categories:
+---
+So yeah.  Wow.  All that blabbering in my last post about wanting to start blogging and not just updating when I decide it's time for a new site layout.  Goodness we humans sure are creatures of habit.  Annnnywho, I started this post simply just to check whether or not the new_post script I wrote months ago works as it should.  I am currently working on a new layout for this site and with that should come some new posts.  I'm not scraping anything this time though!  Until we meet again.
+
+Reppard
