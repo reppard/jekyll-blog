@@ -55,13 +55,19 @@ ul.posts {
 ul.posts li {
   line-height: 1.75em;
   margin-top: 1.75em;
-  padding: 0 0 0 1em;
   background: black;
   border:2px dotted #63de00;
+  text-align: center;
 }
 
 ul.posts a {
   color:#63de00;
+}
+
+ul.posts li p {
+  color:#FFBF00;
+  font-size:0.75em;
+  padding: 0 1em 0 0;
 }
 
 ul.posts a:visited {
@@ -72,6 +78,11 @@ ul.posts span {
   color: #aaa;
   font-family: Andale Mono, monospace;
   font-size: 80%;
+}
+
+ul.posts h2 {
+  color: #aaa;
+  font-family: Andale Mono, monospace;
 }
 
 .avatar {
@@ -250,7 +261,7 @@ ul.posts span {
 }
 
 .post ul, .post li {
-  margin-left: 1.35em;
+  //margin-left: 1.35em;
 }
 
 .post code {
@@ -276,4 +287,16 @@ ul.posts span {
 
 .logos {
   text-align:center;
+}
+
+.manheim { 
+  padding: 5px 0 0 0;
+  text-align:center;
+  background:white;
+  margin:auto auto 1.5em auto;
+}
+
+.manheim img {
+  width:25%;
+  height:25%;
 }

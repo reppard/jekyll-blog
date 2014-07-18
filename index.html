@@ -4,15 +4,15 @@ title: Something Isn't Write
 ---
 
 <div id="home">
-  <h1>Posts</h1>
+  <h1>About Me</h1>
   <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }} &raquo; </span><a href="{{ post.url }}">{{ post.title }}</a></li>
-      <div class="excerpt">
-        {{ post.excerpt }}
-        <a class="continue" href="{{ post.url }}">... continue reading</a>
+    <li><h2>[Who...am I?]:</h2><p>I am a born and raised Georgia native.  I enjoy playing pretty much any instrument I can get my hands on.  Aside from music, my hobbies include building and destroying electronics, working on small engines, gaming, and the renewed love of vegan cooking.  I am constantly looking for some new language or technology to play with and learn from.</br>Most importantly, I am ever dedicated to my beautiful wife and children.</p></li>
+    <li>
+      <h2>[Work]:</h2>
+      <p>Currently I work in Sandy Springs, Georgia as a Sr. Automation Test Engineer for <a href="http://manheim.com">Manheim.</a></p>
+      <div class="manheim">
+        <a href="http://manheim.com"><img src="images/manheim.png"/></a>
       </div>
-    {% endfor %}
+    </li>
   </ul>
 </div>
-<script src="/js/post.js"></script>
