@@ -292,11 +292,11 @@ ul.posts h2 {
 .manheim { 
   padding: 5px 0 0 0;
   text-align:center;
-  background:white;
   margin:auto auto 1.5em auto;
 }
 
 .manheim img {
+  background: #fff;
   width:25%;
   height:25%;
 }
