@@ -13,24 +13,24 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
-  //background: url("images/back.jpg") no-repeat right top;
+  background-color: #000;
   background-attachment:fixed;
-  font-family: 13.34px "Lucida Console", Monaco, monospace;
-  //font: 13.34px Helvetica, Arial, sans-serif;
-  //font-size: small;
+  font-family: Andale Mono, monospace;
   text-align: center;
   margin:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Andale Mono, monospace;
   font-size: 100%; }
 
 h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+p {
+  margin: 1em 0;
+  font-family: Andale Mono, monospace;
+}
 
-a { 
-  color: #00a;
+a {
   text-decoration:none;
  }
 
@@ -42,6 +42,11 @@ a {
 /* Home
 /*
 /*****************************************************************************/
+
+#home {
+  font-family: Andale Mono, monospace;
+}
+
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -51,19 +56,26 @@ ul.posts li {
   line-height: 1.75em;
   margin-top: 1.75em;
   padding: 0 0 0 1em;
-  background: whitesmoke;
-  border:2px dotted grey;
+  background: black;
+  border:2px dotted #63de00;
+}
+
+ul.posts a {
+  color:#63de00;
+}
+
+ul.posts a:visited {
+  color:#63de00;
 }
 
 ul.posts span {
   color: #aaa;
-  font-family: "Lucida Console", Monaco, monospace;
-  //font-family: Monaco, "Courier New", monospace;
+  font-family: Andale Mono, monospace;
   font-size: 80%;
 }
 
 .avatar {
-  border:2px dotted grey;
+  border:2px dotted #000;
   width:120px;
 }
 
@@ -85,43 +97,56 @@ ul.posts span {
 /*****************************************************************************/
 
 .header {
-  display:inline-block;
-  //background-color:#000;
-  filter:alpha(opacity=60);
-  opacity:.6;
   height:4em;
   width:100%;
-  padding:1em;
-  //margin-left:auto;
-  //margin-right:auto;
   text-align:left;
 }
 
 .header a {
+  padding-left:1em;
   font-weight: bold;
   text-decoration: none;
 }
 
 .header h1.title {
-  color:black;
+  color:#63de00;
   margin-bottom: 0em;
-  //margin-right:auto;
-  //margin-left:auto;
-  //width:11em;
-  font-size:2em;
-  font-family: "Lucida Console", Monaco, monospace;
-  //font-family: 'Seaweed Script', cursive;
+  line-height:2.5em;
+  font-family: 1.5em Andale Mono, monospace;
   text-decoration: none;
 }
 
-.header h3.subtitle {
-  font-size: 75%;
-  color:gray;
+.header .bar {
+  display:inline-block;
+  width:100%;
+  background:#63de00;
   margin-bottom: 1em;
 }
 
+.header .bar p {
+  padding-left:2em;
+  float:left;
+  width:25%;
+}
+
+.header .bar ul.menu a,a:visited {
+  color: #000;
+}
+.header .bar ul.menu {
+  padding-right:2em;
+  float:left;
+  width:75%;
+  text-decoration:none;
+  list-style-type: none;
+}
+
+.header .bar ul.menu li {
+  padding-left:0.2em;
+  font-size: 1em;
+}
+
 .header h1.title a:visited {
-  color:black;
+  color:#63de00;
   text-decoration:none;
 }
 
@@ -142,30 +167,42 @@ ul.posts span {
   font-size: 115%;
   text-align: justify;
   max-width: 42em;
-  margin: 0em auto;
+  margin: 1.25em auto;
   padding: 1em;
   line-height: 1.5em;
-  background-color: #FFF;
-  border:3px dotted grey;
-  //box-shadow: 2px 2px 3px #aaa;
-  //border-left:1px solid #aaa;
+  background:#63de00;
+  border:3px dotted #000;
 }
 
 
 .site .meta {
-  color: #aaa;
+  color: #000;
 }
 
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 2px dotted grey;
+  border-top: 2px dotted #000;
   margin-top: 2em;
   overflow: hidden;
 }
 
 .site .footer .contact {
+  color: #000;
   float: left;
+}
+
+.site .footer .links p a { 
+  color: #000;
+}
+
+.site .footer .links p a:visited { 
+  color: #000;
+}
+
+.icons {
+  height: 52px;
+  width: 52px;
 }
 
 .site .footer .links {
@@ -174,7 +211,11 @@ ul.posts span {
 }
 
 .site .footer .contact a {
-  color: #8085C1;
+  color: #000;
+}
+
+.site .footer .contact a:visited {
+  color: #000;
 }
 
 .site .footer .rss {
@@ -195,7 +236,8 @@ ul.posts span {
 
 /* standard */
 
-a.continue {
+.site .excerpt a.continue,a.continue:visited {
+  color: #000;
   text-decoration:none;
   text-align:right;
   display:block;
@@ -207,7 +249,7 @@ a.continue {
   padding: 0 .4em;
 }
 
-.post ul, .post ol {
+.post ul, .post li {
   margin-left: 1.35em;
 }
 
@@ -233,6 +275,5 @@ a.continue {
 }
 
 .logos {
-  opacity: 0.2;
   text-align:center;
 }
