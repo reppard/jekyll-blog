@@ -74,6 +74,6 @@ options = ParseOptions.parse(ARGV)
 filename = "#{options.date}-#{options.title.gsub(' ','-')}-#{options.stamp}.markdown"
 post = Post.build(options,filename)
 
-system("./deploy")
+system("./deploy.rb")
 puts "All done!"
 
