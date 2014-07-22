@@ -207,11 +207,11 @@ ul.posts h2 {
   float: left;
 }
 
-.site .footer .links p a { 
+.site .footer .links p a {
   color: #000;
 }
 
-.site .footer .links p a:visited { 
+.site .footer .links p a:visited {
   color: #000;
 }
 
@@ -293,14 +293,14 @@ ul.posts h2 {
   text-align:center;
 }
 
-.manheim { 
+.manheim {
   padding: 5px 0 0 0;
   text-align:center;
   margin:auto auto 1.5em auto;
 }
 
 .manheim img {
-  background: #fff;
+  background: #0A0;
   width:25%;
   height:25%;
 }
