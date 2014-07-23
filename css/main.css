@@ -163,15 +163,22 @@ ul.posts h2 {
   min-height:50px;
 }
 
-ul.menu {
+.menu {
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
   padding: 30px 0px;
 }
 
-ul.menu li {
+.menu li {
   display:inline-block;
+}
+
+.menu ul {
+  background:#5555FF;
+  min-width: 150px;
+  padding:15px;
+  border: 4px double #0000AA;
 }
 
 ul.submenu li {
@@ -179,15 +186,23 @@ ul.submenu li {
   display:block;
 }
 
+ul.submenu {
+  border:none;
+}
+
+ul.submenu a {
+  color:#FFFF55;
+}
+
 .powered {
-  color:#0000AA;
+  color:#FFFF55;
 }
 
 .site {
   font-size: 115%;
   text-align: justify;
   max-width: 80%;
-  margin: 1.25em auto;
+  margin: 30px auto;
   padding: 1em;
   line-height: 1.5em;
   background:#AAA;
@@ -305,11 +320,11 @@ ul.submenu li {
 #typed-cursor {
   color: #000;
   font-weight: 100;
-  width:15px;
+  width:10px;
 }
 
 #typed-cursor.blinking {
-  width:15px;
+  width:10px;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
@@ -323,8 +338,8 @@ ul.submenu li {
     background: transparent;
   }
   50% {
-    background:#00A;
-    color:#00A;
+    color:#FFFF55;
+    background:#FFFF55;
   }
 
 }
@@ -335,8 +350,8 @@ ul.submenu li {
     background: transparent;
   }
   50% {
-    background:#00A;
-    color:#00A;
+    color:#FFFF55;
+    background:#FFFF55;
   }
 }
 
@@ -346,8 +361,8 @@ ul.submenu li {
     background: transparent;
   }
   50% {
-    background:#00A;
-    color:#00A;
+    color:#FFFF55;
+    background:#FFFF55;
   }
 }
 
@@ -357,8 +372,8 @@ ul.submenu li {
     background: transparent;
   }
   50% {
-    background:#00A;
-    color:#00A;
+    color:#FFFF55;
+    background:#FFFF55;
   }
 }
 
@@ -368,7 +383,7 @@ ul.submenu li {
     background: transparent;
   }
   50% {
-    background:#00A;
-    color:#00A;
+    color:#FFFF55;
+    background:#FFFF55;
   }
 }
