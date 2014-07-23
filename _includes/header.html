@@ -17,17 +17,30 @@
   </head>
   <body>
 
-  <div class="header">
-    <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-    <div class="bar">
-      <ul class="menu">
-        <li class="powered">$ poweredByJekyll: </li>
-        <li><a href="/">--about-me</a></li>
-        <li><a href="/blog.html">--blog</a></li>
-        <li><a href="/litebrite">--litebrite</a></li>
-        <li><div id="typed-cursor" class="blinking">_</div></li>
-      </ul>
+    <div class="navbar-wrapper">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="nav-brand" href="/">{{ site.name }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+        <ul class="menu">
+          <li class="powered">$ poweredByJekyll: options</li>
+          </br>
+          <li>
+            <ul class="submenu">
+              <li><a href="/">--about-me</a></li>
+              <li><a href="/blog.html">--blog</a></li>
+              <li><a href="/litebrite">--litebrite</a></li>
+            </ul>
+          </li>
+          </br>
+          <li class="powered">$ poweredByJekyll: </li>
+          <li><div id="typed-cursor" class="blinking">_</div></li>
+        </ul>
+      </div>
     </div>
-  </div>
 
   <div class="site">
