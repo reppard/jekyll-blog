@@ -17,18 +17,18 @@ html {
 html, body { height: 100%; }
 
 body {
-  background-color: #AA5500;
+  background-color: #FFF;
   background-attachment:fixed;
   margin:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#0A0;
+  color:#555;
   font-size: 100%; }
 
 h1 { margin-bottom: 1em; }
 p {
-  color:#0A0;
+  color:#555;
   margin: 1em 0;
 }
 
@@ -38,7 +38,6 @@ a, a:visited, a:link {
  }
 
  a:hover   { color: #000; }
-/*a:visited { color: #a0a; }
 
 /*****************************************************************************/
 /*
@@ -57,7 +56,7 @@ ul.posts {
 ul.posts li {
   line-height: 1.75em;
   margin-top: 1.75em;
-  background: #00AA00;
+  background: #555;
   padding:10px;
 }
 
@@ -66,14 +65,10 @@ ul.posts a {
 }
 
 ul.posts li p {
-  color:#55FF55;
+  color:#FFF;
   font-size:0.75em;
   padding: 0 1em 0 0;
 }
-
-/* ul.posts a:visited { */
-/*   color:#55FF55; */
-/* } */
 
 ul.posts span {
   color:#FFFF55;
@@ -81,7 +76,7 @@ ul.posts span {
 }
 
 ul.posts h2 {
-  color:#FFFF55;
+  color:#FFF;
 }
 
 .avatar {
@@ -195,7 +190,7 @@ ul.submenu li {
   margin: 1.25em auto;
   padding: 1em;
   line-height: 1.5em;
-  background:#55FF55;
+  background:#AAA;
 }
 
 
@@ -219,10 +214,6 @@ ul.submenu li {
   color: #000;
 }
 
-/* .site .footer .links p a:visited { */
-/*   color: #000; */
-/* } */
-
 .icons {
   height: 52px;
   width: 52px;
@@ -236,10 +227,6 @@ ul.submenu li {
 .site .footer .contact a {
   color: #000;
 }
-
-/* .site .footer .contact a:visited { */
-/*   color: #000; */
-/* } */
 
 .site .footer .rss {
   margin-top: 1.1em;
@@ -308,7 +295,7 @@ ul.submenu li {
 }
 
 .manheim img {
-  background: #0A0;
+  background:#555;
   width:25%;
   height:25%;
 }
