@@ -17,16 +17,17 @@ html {
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #AAAAAA;
   background-attachment:fixed;
   margin:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#555;
+  font-weight:normal;
   font-size: 100%; }
 
-h1 { margin-bottom: 1em; }
+h1 { margin-bottom: 15px; }
 p {
   color:#555;
   margin: 1em 0;
@@ -56,17 +57,18 @@ ul.posts {
 ul.posts li {
   line-height: 1.75em;
   margin-top: 1.75em;
-  background: #555;
+  background: #00AAAA;
   padding:10px;
+  border: 5px double #000;
 }
 
 ul.posts a {
-  color:#55FF55;
+  color:#FFF;
 }
 
 ul.posts li p {
-  color:#FFF;
-  font-size:0.75em;
+  color:#000;
+  font-size:16px;
   padding: 0 1em 0 0;
 }
 
@@ -76,7 +78,7 @@ ul.posts span {
 }
 
 ul.posts h2 {
-  color:#FFF;
+  color:#000;
 }
 
 .avatar {
@@ -116,7 +118,7 @@ ul.posts h2 {
   z-index:1000;
   border-radius: 0px;
   margin-bottom: 0px;
-  background-color: #555;
+  background-color: #000;
   min-height:50px;
 }
 
@@ -212,7 +214,17 @@ ul.submenu a {
   background:white;
 }
 
-.color-box {
+.dark-color-box {
+  float:left;
+  margin:0px !important;
+  padding:0px;
+  display:inline-block;
+  width:12.5%;
+  height:10px;
+
+}
+
+.light-color-box {
   float:left;
   margin:0px !important;
   padding:0px;
@@ -227,9 +239,10 @@ ul.submenu a {
   text-align: justify;
   max-width: 80%;
   margin: 30px auto;
-  padding: 1em;
+  padding: 15px;
   line-height: 1.5em;
-  background:#AAA;
+  background:#FFF;
+  border: 4px double #555;
 }
 
 
@@ -298,10 +311,6 @@ ul.submenu a {
   padding: 0 .4em;
 }
 
-.post ul, .post li {
-  //margin-left: 1.35em;
-}
-
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
@@ -334,7 +343,7 @@ ul.submenu a {
 }
 
 .manheim img {
-  background:#555;
+  background:#00AAAA;
   width:25%;
   height:25%;
 }
