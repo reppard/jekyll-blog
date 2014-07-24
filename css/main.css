@@ -198,6 +198,30 @@ ul.submenu a {
   color:#FFFF55;
 }
 
+.dark-color-bar {
+  padding:0px;
+  margin:0px;
+  height:10px;
+  background:black;
+}
+
+.light-color-bar {
+  padding:0px;
+  margin:0px;
+  height:10px;
+  background:white;
+}
+
+.color-box {
+  float:left;
+  margin:0px !important;
+  padding:0px;
+  display:inline-block;
+  width:12.5%;
+  height:10px;
+
+}
+
 .site {
   font-size: 115%;
   text-align: justify;
