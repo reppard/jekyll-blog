@@ -1,3 +1,5 @@
 name: "Something isn't write..."
 markdown: redcarpet
 pygments: true
+
+theme: jekyll-theme-minimal
